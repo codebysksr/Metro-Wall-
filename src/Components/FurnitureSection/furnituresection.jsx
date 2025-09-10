@@ -1,5 +1,5 @@
 import React from "react";
-import "./furnitureSection.css";
+import "./furnituresection.css";
 import photo1 from '../../assets/WhatsApp Image 2025-09-08 at 2.46.33 PM.jpeg'
 import photo2 from '../../assets/WhatsApp Image 2025-09-08 at 2.46.35 PM.jpeg'
 
