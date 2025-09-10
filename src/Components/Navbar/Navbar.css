@@ -1,0 +1,95 @@
+.navbar {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Abhaya Libre", serif;
+}
+
+/* Menu Links */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #555;
+}
+
+/* Contact Us Button */
+.btn {
+  background: #000;
+  color: #fff !important;
+  padding: 8px 18px;
+  transition: 0.3s;
+}
+
+.button1{
+  margin-left: 230px;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

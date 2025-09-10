@@ -1,0 +1,81 @@
+.program {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 60px;
+  gap: 60px;
+}
+
+/* Left Column */
+.program-left {
+  flex: 1;
+}
+.program-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+.program-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+.program-text {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 350px;
+}
+.program-number {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+  font-family: "Abhaya Libre", serif;
+
+}
+
+/* Right Column */
+.program-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.program-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+}
+
+/* 🔹 Responsive for Mobile */
+@media (max-width: 768px) {
+  .program {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  .program-left, 
+  .program-right {
+    width: 100%;
+  }
+  .program-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .program-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .program-number {
+    font-size: 22px;
+  }
+  .program-text {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+

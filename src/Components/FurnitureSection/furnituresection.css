@@ -1,0 +1,33 @@
+.furniture-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  background: #fff;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  text-align: left;
+}
+
+.text-container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.text-container p,
+.image-container p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
