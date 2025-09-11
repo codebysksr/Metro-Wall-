@@ -27,13 +27,14 @@
   font-weight: 700;
 }
 
-.hero-title > span {
-  font-size: 180px;
-  font-weight: bold;
-  color: white;
-  font-family: 'Abhaya Libre', serif;
-  font-weight: 700;
+.hero-title>span{
+    font-size: 180px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
 }
+
 
 /* Center */
 .hero-center {
@@ -43,7 +44,7 @@
   margin-left: -230px;
 }
 .hero-img {
-  width: 300px;
+  width:300px;
   height: 300px;
   border-radius: 8px;
   z-index: -1;
@@ -78,91 +79,4 @@
   width: 100%;
   max-width: 400px;
   border-radius: 8px;
-}
-
-/* -------------------- Responsive -------------------- */
-
-/* Tablet (768px - 1024px) */
-@media (max-width: 1024px) {
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    gap: 40px;
-  }
-
-  .hero-title {
-    font-size: 120px;
-    line-height: .85;
-    text-align: center;
-  }
-
-  .hero-title > span {
-    font-size: 120px;
-  }
-
-  .intro-text {
-    text-align: center;
-    max-width: 90%;
-  }
-
-  .hero-center {
-    margin-left: 0;
-  }
-
-  .hero-img {
-    width: 250px;
-    height: 250px;
-  }
-
-  .hero-right {
-    text-align: center;
-  }
-
-  .work-heading {
-    margin: 0 auto 15px;
-  }
-}
-
-/* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 30px 15px;
-    gap: 30px;
-  }
-
-  .hero-title {
-    font-size: 60px;
-    line-height: 1;
-    text-align: center;
-  }
-
-  .hero-title > span {
-    font-size: 60px;
-  }
-
-  .intro-text {
-    font-size: 14px;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hero-img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .btn-outline {
-    font-size: 13px;
-    padding: 8px 14px;
-  }
-
-  .work-heading {
-    font-size: 18px;
-  }
-
-  .work-img {
-    max-width: 100%;
-  }
 }
