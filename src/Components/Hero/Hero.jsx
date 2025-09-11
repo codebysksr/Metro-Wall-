@@ -6,32 +6,43 @@ import hero2 from '../../assets/unsplash_YqFz7UMm8qE.png'
 
 const hero = () => {
   return (
-        <section class="hero">
-    
-    <div class="hero-left">
-      <p class="intro-text">
-       "We transform spaces into reflections of your lifestyle
-         — blending functionality with refined aesthetics. Whether it’s a cozy home or a bold commercial space, we craft interiors that feel as good as they look."
-      </p>
-      <h1 class="hero-title">Interi<span>or</span> <br/> Design</h1>
-    </div>
+      <section className="interior">
+      {/* Left Side */}
+      <div className="interior-left">
+        <p className="interior-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </p>
+        <h1 className="interior-title">
+          Interior <br /> Design
+        </h1>
+      </div>
 
-   
-    <div class="hero-center">
-      <img src={hero1} alt="Interior Design Room" class="hero-img"/>
-    </div>
+      {/* Center Image */}
+      <div className="interior-center">
+        <img
+          src={hero1}
+          alt="Interior"
+          className="interior-main-img"
+        />
+      </div>
 
-   
-    <div class="hero-right">
-      <p class="work-label">Our Recent Work</p>
-      <h2 class="work-heading">
-        Your Vision. Our Craft. Let’s Bring It to Life.
-      </h2>
-      <a href="#" class="btn-outline">View Project</a>
-      <img src={hero2} alt="Recent Project" class="work-img"/>
-    </div>
-  </section>
-  )
+      {/* Right Side */}
+      <div className="interior-right">
+        <p className="interior-small">Our Recent Work</p>
+        <h2 className="interior-subtitle">
+          We Will Make These Unique <br />
+          Tastes Of Yours A Design Reality!
+        </h2>
+        <button className="interior-btn">VIEW PROJECT</button>
+        <img
+          src={hero2}
+          alt="Interior Work"
+          className="interior-side-img"
+        />
+      </div>
+    </section>
+  );
 }
 
 export default hero

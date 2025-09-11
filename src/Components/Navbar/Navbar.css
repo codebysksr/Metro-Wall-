@@ -1,95 +1,84 @@
+/* Navbar Container */
 .navbar {
-  width: 100%;
-  background: #fff;
-  position: fixed;
-  top: 0;
-}
-
-.navbar-container {
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 12px 24px;
+  background: #fff;
+  margin: 20px 20px;
 }
 
 /* Logo */
 .logo {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  font-weight: 700;
-  font-style: normal;
-  font-family: "Abhaya Libre", serif;
-}
-
-/* Menu Links */
-.nav-links ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-.nav-links ul li a {
-  text-decoration: none;
   color: #000;
-  font-size: 16px;
-  transition: 0.3s;
+}
+.logo-highlight {
+  font-size: 24px;
+  font-weight: 900;
+  border-bottom: 2px solid #000;
+  margin-right: 2px;
 }
 
-.nav-links ul li a:hover {
-  color: #555;
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
-/* Contact Us Button */
-.btn {
-  background: #000;
-  color: #fff !important;
+/* Sign Up Button */
+.signup-btn {
+  background: #222;
+  color: #fff;
   padding: 8px 18px;
-  transition: 0.3s;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.button1{
-  margin-left: 230px;
-}
-
-.btn:hover {
-  background: #333;
-}
-
-/* Hamburger */
+/* Hamburger (hidden by default) */
 .hamburger {
   display: none;
-  font-size: 26px;
+  flex-direction: column;
+  gap: 4px;
   cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
     background: #fff;
-    border-top: 1px solid #eee;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
   }
-
-  .nav-links.active {
-    display: block;
-  }
-
-  .nav-links ul {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 0;
-    text-align: center;
+  .nav-links.open {
+    display: flex;
   }
 
   .hamburger {
-    display: block;
+    display: flex;
+  }
+
+  .signup-btn {
+    display: none;
   }
 }

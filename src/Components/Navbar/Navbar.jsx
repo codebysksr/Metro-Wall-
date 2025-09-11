@@ -5,34 +5,30 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="navbar">
-      <div className="navbar-container">
-        {/* Logo */}
-        <div className="logo">Metro Wall Street</div>
-
-        {/* Hamburger */}
-        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? "✕" : "☰"}
-        </div>
-
-        {/* Menu */}
-        <nav className={`nav-links ${isOpen ? "active" : ""}`}>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Our Gallery</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Services</a></li>
-            <div className="button1">
-            <li>
-              <a id="btn1" href="#" className="btn">Contact Us</a>
-            
-            </li>
-            </div>
-          </ul>
-        </nav>
+    <nav className="navbar">
+      {/* Logo */}
+      <div className="logo">
+        <span className="logo-highlight">M</span>etro Wall Street
       </div>
-    </header>
+
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Links */}
+      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+
+      {/* Button */}
+      <button className="signup-btn">Sign Up</button>
+    </nav>
   );
 };
 

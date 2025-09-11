@@ -1,82 +1,122 @@
-.hero {
+.interior {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-top: 60px;
-  padding: 60px;
-  gap: 50px;
+  gap: 60px;
+  padding: 80px;
+  flex-wrap: wrap;
+  background: #fff;
 }
 
-/* Left */
-.hero-left {
+/* Left Section */
+.interior-left {
   flex: 1;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: flex-start;
+  min-width: 280px;
+  max-width: 320px;
 }
-.intro-text {
-  font-size: 16px;
-  max-width: 420px;
+
+.interior-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
   margin-bottom: 20px;
 }
-.hero-title {
-  font-size: 180px;
-  font-weight: bold;
-  line-height: .75;
-  font-family: 'Abhaya Libre', serif;
+
+.interior-title {
+  font-size: 92px;
   font-weight: 700;
+  line-height: 1.05;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-title>span{
-    font-size: 180px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 700;
-}
-
-
-/* Center */
-.hero-center {
-  flex: 1;
+/* Center Image */
+.interior-center {
+  flex: 1.2;
   display: flex;
   justify-content: center;
-  margin-left: -230px;
-}
-.hero-img {
-  width:300px;
-  height: 300px;
-  border-radius: 8px;
-  z-index: -1;
+  position: relative;
 }
 
-/* Right */
-.hero-right {
-  flex: 1;
-}
-.work-label {
-  font-size: 12px;
-  color: #555;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-.work-heading {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  max-width: 300px;
-}
-.btn-outline {
-  display: inline-block;
-  padding: 10px 18px;
-  border: 1px solid black;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-.work-img {
+.interior-main-img {
+  border: 3px solid #1e90ff; /* blue border */
+  max-width: 420px;
   width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
+  height: auto;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Make “Interior Design” overlap image */
+.interior-title {
+  margin-top: -40px;
+  margin-left: -20px;
+}
+
+/* Right Section */
+.interior-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.interior-small {
+  font-size: 14px;
+  color: #666;
+}
+
+.interior-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.interior-btn {
+  border: 1px solid #000;
+  background: transparent;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+}
+
+.interior-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.interior-side-img {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .interior {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .interior-title {
+    font-size: 64px;
+    margin: 0;
+  }
+
+  .interior-main-img {
+    max-width: 100%;
+  }
+
+  .interior-side-img {
+    max-width: 100%;
+  }
 }
